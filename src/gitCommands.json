@@ -1,0 +1,11 @@
+{
+    "git init": {
+      "definition": "Initialize a new Git repository",
+      "practical_use": "Setting up a new project"
+    },
+    "git clone": {
+      "definition": "Clone a repository into a new directory",
+      "practical_use": "Copying a project to your local machine"
+    }
+  }
+  

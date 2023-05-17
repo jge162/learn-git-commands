@@ -14,7 +14,10 @@
   border-radius: 5px;
   margin-bottom: 10px;
   width: 300px;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 25%, rgba(208,222,33,1) 50%, rgba(79,220,74,1) 75%, rgba(63,81,181,1) 100%);
+  color: #fff;
 }
+
 
 .submit-button {
   padding: 10px 20px;

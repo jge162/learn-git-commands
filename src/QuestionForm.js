@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
+import gitCommands from './gitCommands.json'; // Import your JSON data here
 import './QuestionForm.css';
 
 const QuestionForm = () => {
   const [question, setQuestion] = useState('');
   const [response, setResponse] = useState('');
 
-  const data = {
-    'cherry pick <commit>': {
-      definition: 'Apply a specific commit from another branch onto the current branch. Useful when you need to bring in a single commit without merging the entire branch.',
-      practical_use: 'Incorporating a specific commit from a feature branch into the main branch without merging all the other changes.',
-    },
-    // Add the rest of your data here
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      const responseKey = Object.keys(data).find(key => key.startsWith(question));
-      const response = responseKey ? data[responseKey] : { definition: 'Not Found', practical_use: 'Not Found' };
+      const responseKey = Object.keys(gitCommands).find(key => key.startsWith(question));
+      const response = responseKey ? gitCommands[responseKey] : { definition: 'Not Found', practical_use: 'Not Found' };
       setResponse(
         `<div><strong>Definition:</strong> ${response.definition}</div>
         <div><strong>Practical Use:</strong> ${response.practical_use}</div>`
@@ -28,7 +21,6 @@ const QuestionForm = () => {
     }
   };
   
-
   return (
     <div className="question-form">
       <h2 className="slide-down">Welcome, what git command interests you?</h2>
