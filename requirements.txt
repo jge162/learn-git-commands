@@ -6,4 +6,3 @@ pydantic==1.10.2
 starlette==0.14.2
 typing_extensions==4.5.0
 uvicorn==0.15.0
-python==3.10.4

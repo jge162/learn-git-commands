@@ -1,11 +1,47 @@
 {
     "git init": {
       "definition": "Initialize a new Git repository",
-      "practical_use": "Setting up a new project"
+      "practical_use": "Start a new project tracked by Git"
     },
     "git clone": {
       "definition": "Clone a repository into a new directory",
-      "practical_use": "Copying a project to your local machine"
+      "practical_use": "Download a project from a remote repository like GitHub to work locally"
+    },
+    "git add": {
+      "definition": "Add files to the staging area",
+      "practical_use": "Prepare changes for commit by adding modified files to the staging area"
+    },
+    "git commit": {
+      "definition": "Create a new commit with the changes in the staging area",
+      "practical_use": "Save changes to the repository with a descriptive message"
+    },
+    "git push": {
+      "definition": "Upload local changes to a remote repository",
+      "practical_use": "Upload local commits to a remote repository, like when contributing to a project on GitHub"
+    },
+    "git pull": {
+      "definition": "Download changes from a remote repository to your local repository",
+      "practical_use": "Update your local repository with the latest changes from the remote"
+    },
+    "git fetch": {
+      "definition": "Download changes from a remote repository without merging them",
+      "practical_use": "Check the updates from the remote repository without affecting your local work"
+    },
+    "git branch": {
+      "definition": "Create, list, or delete branches",
+      "practical_use": "Manage branches in your repository. Branching is useful when you want to add a feature or fix a bug without disturbing the main code"
+    },
+    "git merge": {
+      "definition": "Merge changes from one branch into another",
+      "practical_use": "Integrate changes from one branch into another, like when you've finished a feature and want to add it to the main code"
+    },
+    "git diff": {
+      "definition": "Show differences between commits, branches, or files",
+      "practical_use": "Review changes you've made in the code"
+    },
+    "git cherry-pick": {
+      "definition": "Apply a specific commit to the current branch",
+      "practical_use": "Incorporate a specific commit from another branch into the current branch"
     }
   }
   
