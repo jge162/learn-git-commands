@@ -58,21 +58,23 @@ const QuestionForm = () => {
       <img src="/git-icon.png" alt="Git Icon" className="git-icon" />
       <h2 className="slide-down">Welcome, what git command interests you?</h2>
       <form onSubmit={handleSubmit}>
-        <select className="question-select" value={question} onChange={handleSelectChange}>
-          <option value="">Select a command</option>
-          {commandOptions.map((option) => (
+    <select className="question-select" value={question} onChange={handleSelectChange}>
+        <option value="">Select a command</option>
+        {commandOptions.map((option) => (
             <option key={option} value={option}>
-              {option}
+            {option}
             </option>
-          ))}
-        </select>
+        ))}
+    </select>
+    <div className="button-container">
         <button className="submit-button" type="submit" disabled={!question}>
-          Query
+            Query
         </button>
         <button className="reset-button" onClick={handleReset}>
-          Reset
+            Reset
         </button>
-      </form>
+    </div>
+</form>
       <div className="response">
         {Array.isArray(response) ? (
           response.map((res, index) => (
@@ -81,17 +83,17 @@ const QuestionForm = () => {
         ) : (
           <div dangerouslySetInnerHTML={{ __html: response }}></div>
         )}
-      </div>
-      <Footer />
+    </div>
+       <Footer />
       <div className="icons">
         <a href="https://www.linkedin.com/in/jeremy-escobar/" className="icon-container" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon className="icon" style={{ fontSize: 60 }} />
         </a>
-  <a href="https://github.com/jge162" className="icon-container" target="_blank" rel="noopener noreferrer">
-    <GitHubIcon className="icon" style={{ fontSize: 60 }} />
-  </a>
-</div>
-    </div>
+        <a href="https://github.com/jge162" className="icon-container" target="_blank" rel="noopener noreferrer">
+        <GitHubIcon className="icon" style={{ fontSize: 60 }} />
+      </a>
+    </div>    
+  </div>
   );
 };
 

@@ -192,4 +192,14 @@
     /* Add top margin */
     margin-top: 70px;
   }
+  .button-container {
+    flex-direction: row;
+}
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
