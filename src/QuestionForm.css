@@ -195,6 +195,9 @@
   .button-container {
     flex-direction: row;
 }
+.slide-down {
+  text-align: center;
+}
 }
 .button-container {
   width: 100%;
