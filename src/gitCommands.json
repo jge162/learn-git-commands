@@ -42,6 +42,73 @@
     "git cherry-pick": {
       "definition": "Apply a specific commit to the current branch",
       "practical_use": "Incorporate a specific commit from another branch into the current branch"
+    },
+    "git status": {
+      "definition": "Show the status of files in the repository",
+      "practical_use": "Check the current state of files (untracked, modified, staged, etc.) in the repository"
+    },
+    "git log": {
+      "definition": "Display commit history",
+      "practical_use": "View the commit history of the repository, including the author, date, and commit message"
+    },
+    "git remote": {
+      "definition": "Manage remote repositories",
+      "practical_use": "Add, rename, or remove remote repositories associated with the local repository"
+    },
+    "git rebase": {
+      "definition": "Reapply commits on top of another base commit",
+      "practical_use": "Modify the commit history by moving, combining, or splitting commits"
+    },
+    "git stash": {
+      "definition": "Save changes that are not ready to be committed",
+      "practical_use": "Temporarily save changes without committing them, allowing you to switch branches or perform other tasks"
+    },
+    "git tag": {
+      "definition": "Create, list, or delete tags",
+      "practical_use": "Assign meaningful names to specific points in Git history, such as releases or important commits"
+    },
+    "git blame": {
+      "definition": "Show who modified each line in a file and when",
+      "practical_use": "Identify the author and commit information for each line of a file"
+    },
+    "git show": {
+      "definition": "Show information about a specific commit",
+      "practical_use": "Display the details of a commit, including the changes made and the commit message"
+    },
+    "git revert": {
+      "definition": "Create a new commit that undoes a previous commit",
+      "practical_use": "Reverse the changes made by a previous commit and create a new commit to undo those changes"
+    },
+    "git checkout": {
+      "definition": "Switch branches or restore files",
+      "practical_use": "Switch between branches or restore files to a previous state"
+    },
+    "git config": {
+      "definition": "Get or set repository or global configuration options",
+      "practical_use": "Configure Git settings, such as username, email, aliases, and behavior"
+    },
+    "git clean": {
+      "definition": "Remove untracked files from the working directory",
+      "practical_use": "Delete files that are not tracked by Git, helping to keep the working directory clean"
+    },
+    "git show-branch": {
+      "definition": "Show branches and their commits",
+      "practical_use": "Display the commits and their relationships across multiple branches"
+    },
+    "git archive": {
+      "definition": "Create a tar or zip archive of a repository's contents",
+      "practical_use": "Export a specific version of a repository as an archive file for sharing or deployment"
+    },
+    "git bisect": {
+      "definition": "Find the commit that introduced a bug using binary search",
+      "practical_use": "Systematically identify the commit that introduced a bug by narrowing down the search range"
+    },
+    "git rebase -i": {
+      "definition": "Interactively rebase commits",
+      "practical_use": "Modify, reorder, squash, or delete commits interactively to refine the commit history"
+    },
+    "git cherry": {
+      "definition": "Find commits that have not been merged",
+      "practical_use": "Identify commits that exist in one"
     }
   }
-  
