@@ -1,0 +1,39 @@
+git cherry-pick <commit>:
+Definition: Apply a specific commit from another branch onto the current branch. Useful when you need to bring in a single commit without merging the entire branch.
+Practical Use: Incorporating a specific commit from a feature branch into the main branch without merging all the other changes.
+
+git rebase -i <commit>:
+Definition: Interactively rebase your branch starting from a specific commit. It allows you to modify commits, reorder them, squash them, or split them. Helpful for cleaning up commit history before merging.
+Practical Use: Rearranging or combining commits before integrating them into a main branch, ensuring a cleaner and more organized commit history.
+
+git bisect:
+Definition: Perform a binary search to find the commit that introduced a bug. It helps pinpoint the exact commit that caused an issue by systematically narrowing down the range of commits to investigate.
+Practical Use: Finding the specific commit responsible for a bug or regression, making it easier to identify and fix the issue.
+
+git reflog:
+Definition: View the reference logs, which show the history of all branch updates, including branch deletions and rebases. Useful for recovering lost commits or branches.
+Practical Use: Retrieving lost commits, branches, or changes that were accidentally deleted or lost due to mistaken operations.
+
+git revert <commit>:
+Definition: Create a new commit that undoes the changes introduced by a specific commit. It's a safe way to undo changes while preserving the commit history.
+Practical Use: Reverting a specific commit that introduced unwanted changes, ensuring that the project returns to a previous state while keeping a record of the reversal.
+
+git submodule:
+Definition: Manage Git submodules within your repository. Submodules allow you to include other Git repositories as subdirectories of your project, which can be useful for incorporating external libraries or dependencies.
+Practical Use: Integrating external code repositories or dependencies into your project, keeping them as separate entities with their own version control history.
+
+git blame <file>:
+Definition: Show who last modified each line of a specific file. It helps identify the author responsible for a particular change, aiding collaboration and accountability.
+Practical Use: Determining the author responsible for specific code changes, facilitating communication and collaboration when investigating issues or discussing code improvements.
+
+git archive:
+Definition: Create a compressed archive of the Git repository at a specific commit. It's useful for generating release packages or sharing code snapshots without including Git-specific files.
+Practical Use: Packaging the project's source code at a specific commit for distribution, such as creating release bundles or sharing code snapshots with collaborators.
+
+git clean:
+Definition: Remove untracked files and directories from the working directory. Helpful for cleaning up leftover build artifacts or temporary files.
+Practical Use: Removing unnecessary files and directories from the project, ensuring a clean working directory free from untracked artifacts or temporary files.
+
+git revert --no-commit <commit>:
+Definition: Revert changes introduced by a specific commit but with the changes staged rather than committed. Useful when you want to review and modify the changes before committing them.
+Practical Use: Previewing the changes introduced by a specific commit and making modifications before finalizing and committing the reversion.

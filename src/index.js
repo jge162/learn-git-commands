@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import QuestionForm from './QuestionForm';
 import { sendToVercelAnalytics } from './vitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <QuestionForm />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-reportWebVitals(sendToVercelAnalytics);
+sendToVercelAnalytics();
