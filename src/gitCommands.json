@@ -182,5 +182,81 @@
         "practical_use": "Display a list of all global Git configurations for all repositories on the local machine"
       }
     }
-  }
+  },
+    "git branch -d": {
+      "definition": "Delete a branch",
+      "practical_use": "Remove a branch after it has been merged or is no longer needed"
+    },
+    "git branch -r": {
+      "definition": "List remote branches",
+      "practical_use": "Display a list of remote branches in the repository"
+    },
+    "git branch -a": {
+      "definition": "List all branches (local and remote)",
+      "practical_use": "View a combined list of both local and remote branches in the repository"
+    },
+    "git branch -m": {
+      "definition": "Rename a branch",
+      "practical_use": "Change the name of a branch"
+    },
+    "git branch -u": {
+      "definition": "Set upstream branch",
+      "practical_use": "Configure the upstream branch for a local branch"
+    },
+    "git branch -vv": {
+      "definition": "Show tracking branches",
+      "practical_use": "Display a list of local branches with information about their upstream tracking branches"
+    },
+    "git remote -v": {
+      "definition": "Show remote repository details",
+      "practical_use": "Display the details of the remote repositories associated with the local repository"
+    },
+    "git fetch --all": {
+      "definition": "Fetch all remote branches",
+      "practical_use": "Retrieve updates from all remote repositories and update the local branches accordingly"
+    },
+    "git push --force": {
+      "definition": "Force push changes to a remote repository",
+      "practical_use": "Overwrite remote branch history with local branch history, use with caution"
+    },
+    "git stash pop": {
+      "definition": "Apply the most recently stashed changes and remove it from the stash list",
+      "practical_use": "Retrieve the most recently stashed changes and apply them to the current branch"
+    },
+    "git stash list": {
+      "definition": "List all stashed changes",
+      "practical_use": "Display a list of all stashed changes in the repository"
+    },
+    "git stash drop": {
+      "definition": "Remove a specific stash",
+      "practical_use": "Delete a specific stash from the stash list"
+    },
+    "git tag -a": {
+      "definition": "Create an annotated tag",
+      "practical_use": "Create a tag with a message, author, and date, providing additional information about the tagged commit"
+    },
+    "git tag -l": {
+      "definition": "List tags",
+      "practical_use": "Display a list of tags in the repository"
+    },
+    "git tag -d": {
+      "definition": "Delete a tag",
+      "practical_use": "Remove a tag from the repository"
+    },
+    "git tag -n": {
+      "definition": "Show tag details",
+      "practical_use": "Display the details of a specific tag, including the message and the commit it points to"
+    },
+    "git blame -L": {
+      "definition": "Show who modified specific lines in a file and when",
+      "practical_use": "Identify the author and commit information for specific lines of a file"
+    },
+    "git clean -n": {
+      "definition": "Perform a dry run of git clean",
+      "practical_use": "Preview the files and directories that will be removed by the `git clean` command"
+    },
+    "git clean -f": {
+      "definition": "Forcefully remove untracked files from the working directory",
+      "practical_use": "Clean up the working directory by permanently deleting untracked files and directories. This is useful when you want to remove generated or temporary files that are not part of the Git repository."
+    }
 }

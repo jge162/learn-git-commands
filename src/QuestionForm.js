@@ -46,6 +46,7 @@ const QuestionForm = () => {
 
   return (
     <div className="question-form">
+      <img src="/git-icon.png" alt="Git Icon" className="git-icon" /> {/* Add the image */}
       <h2 className="slide-down">Welcome, what git command interests you?</h2>
       <form onSubmit={handleSubmit}>
         <select className="question-select" value={question} onChange={handleSelectChange}>
