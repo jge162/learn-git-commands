@@ -1,6 +1,6 @@
 # Git Commannds 
 
-Learn what they are and what they do through my eyes. Free to use on this repo.
+`Git Commands ->` Learn what they are and what they do through my eyes. Free to use on this repo.
 Share with your friend and let me know if you have questions, or issues.
 
 ### Web link [Learn git commands](https://git-commands-chi.vercel.app/)
