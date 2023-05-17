@@ -14,7 +14,7 @@ jobs:
     if: ${{ github.actor == 'jge162' }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: main
     
