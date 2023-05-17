@@ -1,18 +1,13 @@
-from fastapi import FastAPI
-from typing import Dict
-from pydantic import BaseModel
+from flask import Flask, request, jsonify
 
-app = FastAPI()
+app = Flask(__name__)
 
-class Question(BaseModel):
-    question: str
-
-def read_data() -> Dict[str, Dict[str, str]]:
+def read_data() -> dict:
     """
     Read data from a file and return a dictionary containing the parsed data.
 
     Returns:
-        Dict[str, Dict[str, str]]: A dictionary containing the parsed data.
+        dict: A dictionary containing the parsed data.
     """
     data = {}
     with open('data.txt', 'r', encoding='utf-8') as file:
@@ -24,8 +19,18 @@ def read_data() -> Dict[str, Dict[str, str]]:
             data[term] = {'definition': definition, 'practical_use': practical_use}
     return data
 
-@app.post('/api/question')
-def answer_question(question: Question):
+@app.route('/api/question', methods=['POST'])
+def answer_question():
+    """
+    Accepts a POST request with a 'question' in the JSON body and responds with 
+    the definition and practical use of the question term. 
+    Returns: dict: A dictionary containing the definition and practical use of 
+    the question term. If the term is not found, it returns 'Not Found'.
+    """
+    question = request.json['question']
     data = read_data()
-    response = data.get(question.question, {'definition': 'Not Found', 'practical_use': 'Not Found'})
-    return response
+    response = data.get(question, {'definition': 'Not Found', 'practical_use': 'Not Found'})
+    return jsonify(response)
+
+if __name__ == '__main__':
+    app.run()

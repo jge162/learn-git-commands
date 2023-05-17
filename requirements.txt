@@ -1,3 +1,6 @@
 fastapi==0.65.2
 uvicorn==0.15.0
 pydantic==1.10.2
+Python==3.10.4
+Flask==2.3.2
+Werkzeug==2.3.4
