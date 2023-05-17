@@ -1,157 +1,195 @@
 {
   "git init": {
     "definition": "Initialize a new Git repository",
-    "practical_use": "Start a new project tracked by Git"
+    "practical_use": "Start a new project tracked by Git",
+    "example": "git init"
   },
   "git clone": {
     "definition": "Clone a repository into a new directory",
-    "practical_use": "Download a project from a remote repository like GitHub to work locally"
+    "practical_use": "Download a project from a remote repository like GitHub to work locally",
+    "example": "git clone &lt;repository_url&gt;"
   },
   "git add": {
     "definition": "Add files to the staging area",
-    "practical_use": "Prepare changes for commit by adding modified files to the staging area"
+    "practical_use": "Prepare changes for commit by adding modified files to the staging area",
+    "example": "git add &lt;file1&gt; &lt;file2&gt;"
   },
   "git commit": {
     "definition": "Create a new commit with the changes in the staging area",
-    "practical_use": "Save changes to the repository with a descriptive message"
+    "practical_use": "Save changes to the repository with a descriptive message",
+    "example": "git commit -m 'Commit message'"
   },
   "git push": {
     "definition": "Upload local changes to a remote repository",
-    "practical_use": "Upload local commits to a remote repository, like when contributing to a project on GitHub"
+    "practical_use": "Upload local commits to a remote repository, like when contributing to a project on GitHub",
+    "example": "git push origin &lt;branch&gt;"
   },
   "git pull": {
     "definition": "Download changes from a remote repository to your local repository",
-    "practical_use": "Update your local repository with the latest changes from the remote"
+    "practical_use": "Update your local repository with the latest changes from the remote",
+    "example": "git pull origin &lt;branch&gt;"
   },
   "git fetch": {
     "definition": "Download changes from a remote repository without merging them",
-    "practical_use": "Check the updates from the remote repository without affecting your local work"
+    "practical_use": "Check the updates from the remote repository without affecting your local work",
+    "example": "git fetch origin"
   },
   "git branch": {
     "definition": "Create, list, or delete branches",
-    "practical_use": "Manage branches in your repository. Branching is useful when you want to add a feature or fix a bug without disturbing the main code"
+    "practical_use": "Manage branches in your repository. Branching is useful when you want to add a feature or fix a bug without disturbing the main code",
+    "example": "git branch &lt;branch_name&gt;"
   },
   "git merge": {
     "definition": "Merge changes from one branch into another",
-    "practical_use": "Integrate changes from one branch into another, like when you've finished a feature and want to add it to the main code"
+    "practical_use": "Integrate changes from one branch into another, like when you've finished a feature and want to add it to the main code",
+    "example": "git merge &lt;branch_name&gt;"
   },
   "git diff": {
     "definition": "Show differences between commits, branches, or files",
-    "practical_use": "Review changes you've made in the code"
+    "practical_use": "Review changes you've made in the code",
+    "example": "git diff &lt;commit1&gt; &lt;commit2&gt;"
   },
   "git cherry-pick": {
     "definition": "Apply a specific commit to the current branch",
-    "practical_use": "Incorporate a specific commit from another branch into the current branch"
+    "practical_use": "Incorporate a specific commit from another branch into the current branch",
+    "example": "git cherry-pick &lt;commit&gt;"
   },
   "git status": {
     "definition": "Show the status of files in the repository",
-    "practical_use": "Check the current state of files (untracked, modified, staged, etc.) in the repository"
+    "practical_use": "Check the current state of files (untracked, modified, staged, etc.) in the repository",
+    "example": "git status"
   },
   "git log": {
     "definition": "Display commit history",
-    "practical_use": "View the commit history of the repository, including the author, date, and commit message"
+    "practical_use": "View the commit history of the repository, including the author, date, and commit message",
+    "example": "git log"
   },
   "git rebase": {
     "definition": "Reapply commits on top of another base commit",
-    "practical_use": "Modify the commit history by moving, combining, or splitting commits"
+    "practical_use": "Modify the commit history by moving, combining, or splitting commits",
+    "example": "git rebase &lt;base_commit&gt;"
   },
   "git stash": {
     "definition": "Save changes that are not ready to be committed",
-    "practical_use": "Temporarily save changes without committing them, allowing you to switch branches or perform other tasks"
+    "practical_use": "Temporarily save changes without committing them, allowing you to switch branches or perform other tasks",
+    "example": "git stash"
   },
   "git tag": {
     "definition": "Create, list, or delete tags",
-    "practical_use": "Assign meaningful names to specific points in Git history, such as releases or important commits"
+    "practical_use": "Assign meaningful names to specific points in Git history, such as releases or important commits",
+    "example": "git tag &lt;tag_name&gt;"
   },
   "git blame": {
     "definition": "Show who modified each line in a file and when",
-    "practical_use": "Identify the author and commit information for each line of a file"
+    "practical_use": "Identify the author and commit information for each line of a file",
+    "example": "git blame &lt;file&gt;"
   },
   "git show": {
     "definition": "Show information about a specific commit",
-    "practical_use": "Display the details of a commit, including the changes made and the commit message"
+    "practical_use": "Display the details of a commit, including the changes made and the commit message",
+    "example": "git show &lt;commit&gt;"
   },
   "git revert": {
     "definition": "Create a new commit that undoes a previous commit",
-    "practical_use": "Reverse the changes made by a previous commit and create a new commit to undo those changes"
+    "practical_use": "Reverse the changes made by a previous commit and create a new commit to undo those changes",
+    "example": "git revert &lt;commit&gt;"
   },
   "git checkout": {
     "definition": "Switch branches or restore files",
-    "practical_use": "Switch between branches or restore files to a previous state"
+    "practical_use": "Switch between branches or restore files to a previous state",
+    "example": "git checkout &lt;branch_name&gt;"
   },
   "git clean": {
     "definition": "Remove untracked files from the working directory",
-    "practical_use": "Delete files that are not tracked by Git, helping to keep the working directory clean"
+    "practical_use": "Delete files that are not tracked by Git, helping to keep the working directory clean",
+    "example": "git clean -f"
   },
   "git show-branch": {
     "definition": "Show branches and their commits",
-    "practical_use": "Display the commits and their relationships across multiple branches"
+    "practical_use": "Display the commits and their relationships across multiple branches",
+    "example": "git show-branch"
   },
   "git archive": {
     "definition": "Create a tar or zip archive of a repository's contents",
-    "practical_use": "Export a specific version of a repository as an archive file for sharing or deployment"
+    "practical_use": "Export a specific version of a repository as an archive file for sharing or deployment",
+    "example": "git archive --format=zip --output=repo.zip &lt;commit&gt;"
   },
   "git bisect": {
     "definition": "Find the commit that introduced a bug using binary search",
-    "practical_use": "Systematically identify the commit that introduced a bug by narrowing down the search range"
+    "practical_use": "Systematically identify the commit that introduced a bug by narrowing down the search range",
+    "example": "git bisect start"
   },
   "git rebase -i": {
     "definition": "Interactively rebase commits",
-    "practical_use": "Modify, reorder, squash, or delete commits interactively to refine the commit history"
+    "practical_use": "Modify, reorder, squash, or delete commits interactively to refine the commit history",
+    "example": "git rebase -i HEAD~3"
   },
   "git cherry": {
     "definition": "Find commits that have not been merged",
-    "practical_use": "Identify commits that exist in one"
+    "practical_use": "Identify commits that exist in one",
+    "example": "git cherry"
   },
   "git remote": {
     "options": {
       "git add": {
         "definition": "Add a remote repository",
-        "practical_use": "Link a local repository to a remote repository by specifying a remote name and URL"
+        "practical_use": "Link a local repository to a remote repository by specifying a remote name and URL",
+        "example": "git remote add origin &lt;repository_url&gt;"
       },
       "git remove": {
         "definition": "Remove a remote repository",
-        "practical_use": "Disconnect a remote repository from the local repository"
+        "practical_use": "Disconnect a remote repository from the local repository",
+        "example": "git remote remove origin"
       },
       "git rename": {
         "definition": "Rename a remote repository",
-        "practical_use": "Change the name of a remote repository in the local repository"
+        "practical_use": "Change the name of a remote repository in the local repository",
+        "example": "git remote rename origin new_origin"
       },
       "git set-url": {
         "definition": "Change the URL of a remote repository",
-        "practical_use": "Update the URL of a remote repository associated with the local repository"
+        "practical_use": "Update the URL of a remote repository associated with the local repository",
+        "example": "git remote set-url origin &lt;new_repository_url&gt;"
       },
       "git show": {
         "definition": "Show information about a remote repository",
-        "practical_use": "Display details such as the URL and fetch/push configuration of a remote repository"
+        "practical_use": "Display details such as the URL and fetch/push configuration of a remote repository",
+        "example": "git remote show origin"
       },
       "git get-url": {
         "definition": "Get the URL of a remote repository",
-        "practical_use": "Retrieve the URL of a remote repository associated with the local repository"
+        "practical_use": "Retrieve the URL of a remote repository associated with the local repository",
+        "example": "git remote get-url origin"
       },
       "git prune": {
         "definition": "Remove stale references to remote branches",
-        "practical_use": "Clean up the local repository by removing references to remote branches that no longer exist"
+        "practical_use": "Clean up the local repository by removing references to remote branches that no longer exist",
+        "example": "git remote prune origin"
       },
       "git set-head": {
         "definition": "Set the default branch for fetching from a remote repository",
-        "practical_use": "Configure the default branch to be fetched from a remote repository"
+        "practical_use": "Configure the default branch to be fetched from a remote repository",
+        "example": "git remote set-head origin &lt;branch_name&gt;"
       },
       "git update": {
         "definition": "Update remote-tracking branches",
-        "practical_use": "Fetch the latest changes from the remote repository and update the corresponding remote-tracking branches"
+        "practical_use": "Fetch the latest changes from the remote repository and update the corresponding remote-tracking branches",
+        "example": "git remote update"
       },
       "git show-tags": {
         "definition": "Show tags from a remote repository",
-        "practical_use": "Display the tags available in a remote repository"
+        "practical_use": "Display the tags available in a remote repository",
+        "example": "git remote show-tags origin"
       },
       "git prune-tags": {
         "definition": "Remove tags that no longer exist on the remote repository",
-        "practical_use": "Delete local tags that no longer exist in the remote repository"
+        "practical_use": "Delete local tags that no longer exist in the remote repository",
+        "example": "git remote prune-tags origin"
       },
       "git set-branches": {
         "definition": "Configure the branches to be pushed to or pulled from a remote repository",
-        "practical_use": "Specify the branches to be included in push or pull operations with a remote repository"
+        "practical_use": "Specify the branches to be included in push or pull operations with a remote repository",
+        "example": "git remote set-branches origin &lt;branch1&gt; &lt;branch2&gt;"
       }
     }
   },
@@ -159,104 +197,130 @@
     "options": {
       "git config --global": {
         "definition": "Set configuration options globally for all repositories",
-        "practical_use": "Configure Git options that apply to all repositories on the local machine"
+        "practical_use": "Configure Git options that apply to all repositories on the local machine",
+        "example": "git config --global user.name John Doe"
       },
       "git config --local": {
         "definition": "Set configuration options for the current repository",
-        "practical_use": "Configure Git options that apply only to the current repository"
+        "practical_use": "Configure Git options that apply only to the current repository",
+        "example": "git config --local user.email john@example.com"
       },
       "git config --user.name": {
         "definition": "Set the username for Git",
-        "practical_use": "Configure the username for the current repository"
+        "practical_use": "Configure the username for the current repository",
+        "example": "git config --user.name John Doe"
       },
       "git config --user.email": {
         "definition": "Set the email address for Git",
-        "practical_use": "Configure the email address for the current repository"
+        "practical_use": "Configure the email address for the current repository",
+        "example": "git config --user.email john@example.com"
       },
       "git config --list": {
         "definition": "Show all Git configurations",
-        "practical_use": "Display a list of all Git configurations for the current repository"
+        "practical_use": "Display a list of all Git configurations for the current repository",
+        "example": "git config --list"
       },
-      "git config--global --list": {
+      "git config --global --list": {
         "definition": "Show all global Git configurations",
-        "practical_use": "Display a list of all global Git configurations for all repositories on the local machine"
+        "practical_use": "Display a list of all global Git configurations for all repositories on the local machine",
+        "example": "git config --global --list"
       }
     }
+  },  
+  "git branch -d": {
+    "definition": "Delete a branch",
+    "practical_use": "Remove a branch after it has been merged or is no longer needed",
+    "example": "git branch -d branch_name"
   },
-    "git branch -d": {
-      "definition": "Delete a branch",
-      "practical_use": "Remove a branch after it has been merged or is no longer needed"
-    },
-    "git branch -r": {
-      "definition": "List remote branches",
-      "practical_use": "Display a list of remote branches in the repository"
-    },
-    "git branch -a": {
-      "definition": "List all branches (local and remote)",
-      "practical_use": "View a combined list of both local and remote branches in the repository"
-    },
-    "git branch -m": {
-      "definition": "Rename a branch",
-      "practical_use": "Change the name of a branch"
-    },
-    "git branch -u": {
-      "definition": "Set upstream branch",
-      "practical_use": "Configure the upstream branch for a local branch"
-    },
-    "git branch -vv": {
-      "definition": "Show tracking branches",
-      "practical_use": "Display a list of local branches with information about their upstream tracking branches"
-    },
-    "git remote -v": {
-      "definition": "Show remote repository details",
-      "practical_use": "Display the details of the remote repositories associated with the local repository"
-    },
-    "git fetch --all": {
-      "definition": "Fetch all remote branches",
-      "practical_use": "Retrieve updates from all remote repositories and update the local branches accordingly"
-    },
-    "git push --force": {
-      "definition": "Force push changes to a remote repository",
-      "practical_use": "Overwrite remote branch history with local branch history, use with caution"
-    },
-    "git stash pop": {
-      "definition": "Apply the most recently stashed changes and remove it from the stash list",
-      "practical_use": "Retrieve the most recently stashed changes and apply them to the current branch"
-    },
-    "git stash list": {
-      "definition": "List all stashed changes",
-      "practical_use": "Display a list of all stashed changes in the repository"
-    },
-    "git stash drop": {
-      "definition": "Remove a specific stash",
-      "practical_use": "Delete a specific stash from the stash list"
-    },
-    "git tag -a": {
-      "definition": "Create an annotated tag",
-      "practical_use": "Create a tag with a message, author, and date, providing additional information about the tagged commit"
-    },
-    "git tag -l": {
-      "definition": "List tags",
-      "practical_use": "Display a list of tags in the repository"
-    },
-    "git tag -d": {
-      "definition": "Delete a tag",
-      "practical_use": "Remove a tag from the repository"
-    },
-    "git tag -n": {
-      "definition": "Show tag details",
-      "practical_use": "Display the details of a specific tag, including the message and the commit it points to"
-    },
-    "git blame -L": {
-      "definition": "Show who modified specific lines in a file and when",
-      "practical_use": "Identify the author and commit information for specific lines of a file"
-    },
-    "git clean -n": {
-      "definition": "Perform a dry run of git clean",
-      "practical_use": "Preview the files and directories that will be removed by the `git clean` command"
-    },
-    "git clean -f": {
-      "definition": "Forcefully remove untracked files from the working directory",
-      "practical_use": "Clean up the working directory by permanently deleting untracked files and directories. This is useful when you want to remove generated or temporary files that are not part of the Git repository."
-    }
-}
+  "git branch -r": {
+    "definition": "List remote branches",
+    "practical_use": "Display a list of remote branches in the repository",
+    "example": "git branch -r"
+  },
+  "git branch -a": {
+    "definition": "List all branches (local and remote)",
+    "practical_use": "View a combined list of both local and remote branches in the repository",
+    "example": "git branch -a"
+  },
+  "git branch -m": {
+    "definition": "Rename a branch",
+    "practical_use": "Change the name of a branch",
+    "example": "git branch -m old_branch_name new_branch_name"
+  },
+  "git branch -u": {
+    "definition": "Set upstream branch",
+    "practical_use": "Configure the upstream branch for a local branch",
+    "example": "git branch -u origin/branch_name"
+  },
+  "git branch -vv": {
+    "definition": "Show tracking branches",
+    "practical_use": "Display a list of local branches with information about their upstream tracking branches",
+    "example": "git branch -vv"
+  },
+  "git remote -v": {
+    "definition": "Show remote repository details",
+    "practical_use": "Display the details of the remote repositories associated with the local repository",
+    "example": "git remote -v"
+  },
+  "git fetch --all": {
+    "definition": "Fetch all remote branches",
+    "practical_use": "Retrieve updates from all remote repositories and update the local branches accordingly",
+    "example": "git fetch --all"
+  },  
+  "git push --force": {
+    "definition": "Force push changes to a remote repository",
+    "practical_use": "Overwrite remote branch history with local branch history, use with caution",
+    "example": "git push --force"
+  },
+  "git stash pop": {
+    "definition": "Apply the most recently stashed changes and remove it from the stash list",
+    "practical_use": "Retrieve the most recently stashed changes and apply them to the current branch",
+    "example": "git stash pop"
+  },
+  "git stash list": {
+    "definition": "List all stashed changes",
+    "practical_use": "Display a list of all stashed changes in the repository",
+    "example": "git stash list"
+  },
+  "git stash drop": {
+    "definition": "Remove a specific stash",
+    "practical_use": "Delete a specific stash from the stash list",
+    "example": "git stash drop stash_name"
+  },
+  "git tag -a": {
+    "definition": "Create an annotated tag",
+    "practical_use": "Create a tag with a message, author, and date, providing additional information about the tagged commit",
+    "example": "git tag -a tag_name -m 'Tag message'"
+  },
+  "git tag -l": {
+    "definition": "List tags",
+    "practical_use": "Display a list of tags in the repository",
+    "example": "git tag -l"
+  },
+  "git tag -d": {
+    "definition": "Delete a tag",
+    "practical_use": "Remove a tag from the repository",
+    "example": "git tag -d tag_name"
+  },
+  "git tag -n": {
+    "definition": "Show tag details",
+    "practical_use": "Display the details of a specific tag, including the message and the commit it points to",
+    "example": "git tag -n tag_name"
+  },
+  "git blame -L": {
+    "definition": "Show who modified specific lines in a file and when",
+    "practical_use": "Identify the author and commit information for specific lines of a file",
+    "example": "git blame -L start_line,end_line file_name"
+  },
+  "git clean -n": {
+    "definition": "Perform a dry run of git clean",
+    "practical_use": "Preview the files and directories that will be removed by the `git clean` command",
+    "example": "git clean -n"
+  },
+  "git clean -f": {
+    "definition": "Forcefully remove untracked files from the working directory",
+    "practical_use": "Clean up the working directory by permanently deleting untracked files and directories.",
+    "example": "git clean -f"
+  }
+  }
+  

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import gitCommands from './gitCommands.json';
 import './QuestionForm.css';
-import Footer from './Footer'; // Import the Footer component
+import Footer from './Footer';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -14,19 +14,26 @@ const QuestionForm = () => {
     e.preventDefault();
     try {
       const responseKey = Object.keys(gitCommands).find((key) => key.startsWith(question));
-      let response = { definition: 'Not Found', practical_use: 'Not Found' };
+      let response = { definition: 'Not Found', practical_use: 'Not Found', example: '' };
 
       if (responseKey) {
-        if (gitCommands[responseKey].options) {
-          response = Object.keys(gitCommands[responseKey].options).map((optionKey) => (
-            `<div><strong>${optionKey}:</strong> ${gitCommands[responseKey].options[optionKey].definition}</div>
-            <div><strong>Practical Use:</strong> ${gitCommands[responseKey].options[optionKey].practical_use}</div>
+        const command = gitCommands[responseKey];
+        let content = '';
+
+        if (command.options) {
+          content = Object.keys(command.options).map((optionKey) => (
+            `<div><strong>${optionKey}:</strong> ${command.options[optionKey].definition}</div>
+            <div><strong>Practical Use:</strong> ${command.options[optionKey].practical_use}</div>
+            <div class="example-text"><strong>Example:</strong> ${command.options[optionKey].example}</div>
             <br>`
           ));
         } else {
-          response = `<div><strong>Definition:</strong> ${gitCommands[responseKey].definition}</div>
-          <div><strong>Practical Use:</strong> ${gitCommands[responseKey].practical_use}</div>`;
+          content = `<div><strong>Definition:</strong> ${command.definition}</div>
+          <div><strong>Practical Use:</strong> ${command.practical_use}</div>
+          <div class="example-text"><strong>Example:</strong> ${command.example}</div>`;
         }
+
+        response = content;
       }
 
       setResponse(response);
@@ -48,7 +55,7 @@ const QuestionForm = () => {
 
   return (
     <div className="question-form">
-      <img src="/git-icon.png" alt="Git Icon" className="git-icon" /> {/* Add the image */}
+      <img src="/git-icon.png" alt="Git Icon" className="git-icon" />
       <h2 className="slide-down">Welcome, what git command interests you?</h2>
       <form onSubmit={handleSubmit}>
         <select className="question-select" value={question} onChange={handleSelectChange}>
@@ -75,11 +82,11 @@ const QuestionForm = () => {
           <div dangerouslySetInnerHTML={{ __html: response }}></div>
         )}
       </div>
-      <Footer /> {/* Added footer component */}
+      <Footer />
       <div className="icons">
-  <a href="https://www.linkedin.com/in/jeremy-escobar/" className="icon-container" target="_blank" rel="noopener noreferrer">
-    <LinkedInIcon className="icon" style={{ fontSize: 60 }} />
-  </a>
+        <a href="https://www.linkedin.com/in/jeremy-escobar/" className="icon-container" target="_blank" rel="noopener noreferrer">
+          <LinkedInIcon className="icon" style={{ fontSize: 60 }} />
+        </a>
   <a href="https://github.com/jge162" className="icon-container" target="_blank" rel="noopener noreferrer">
     <GitHubIcon className="icon" style={{ fontSize: 60 }} />
   </a>
