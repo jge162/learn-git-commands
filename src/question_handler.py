@@ -1,3 +1,9 @@
+"""
+This module defines a Flask web application that provides an API for 
+answering questions. It reads data from a text file and returns the 
+definition and practical use of a term, given the term as a question.
+"""
+
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
