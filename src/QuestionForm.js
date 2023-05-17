@@ -3,7 +3,7 @@ import gitCommands from './gitCommands.json'; // Import your JSON data here
 import './QuestionForm.css';
 
 const QuestionForm = () => {
-  const [question, setQuestion] = useState('');
+  const [question, setQuestion] = useState('git ');
   const [response, setResponse] = useState('');
 
   const handleSubmit = (e) => {
@@ -20,7 +20,13 @@ const QuestionForm = () => {
       setResponse('An error occurred while fetching the response.');
     }
   };
-  
+
+  const handleReset = (e) => {
+    e.preventDefault();
+    setQuestion('git ');
+    setResponse('');
+  };
+
   return (
     <div className="question-form">
       <h2 className="slide-down">Welcome, what git command interests you?</h2>
@@ -32,6 +38,7 @@ const QuestionForm = () => {
           onChange={(e) => setQuestion(e.target.value)} 
         />
         <button className="submit-button" type="submit">Ask</button>
+        <button className="reset-button" onClick={handleReset}>Reset</button>
       </form>
       <div className="response" dangerouslySetInnerHTML={{ __html: response }}></div>
     </div>
