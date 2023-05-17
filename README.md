@@ -5,7 +5,7 @@ Share with your friend and let me know if you have questions, or issues.
 
 ### Web link [Learn git commands](https://git-commands-chi.vercel.app/)
 
-<img style="width: 800px; height: auto;" alt="Screenshot 2023-05-16 at 10 58 51 PM" src"https://github.com/jge162/learn-git-commands/assets/31228460/57fdfe4e-dd81-4fc2-98fa-3fe2b0c0912d">
+![git-icon-1024x1024-pqp7u4hl](https://github.com/jge162/learn-git-commands/assets/31228460/3f159b62-29aa-43ec-af2b-a21976736214)
 
 
 ### Disclaimer: 
