@@ -89,7 +89,7 @@ const QuestionForm = () => {
         <a href="https://www.linkedin.com/in/jeremy-escobar/" className="icon-container" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon className="icon" style={{ fontSize: 60 }} />
         </a>
-        <a href="https://github.com/jge162/learn-git-commands" className="icon-container" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/jge162" className="icon-container" target="_blank" rel="noopener noreferrer">
         <GitHubIcon className="icon" style={{ fontSize: 60 }} />
       </a>
     </div>    
