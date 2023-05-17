@@ -12,7 +12,7 @@
   "git add": {
     "definition": "Add files to the staging area",
     "practical_use": "Prepare changes for commit by adding modified files to the staging area",
-    "example": "git add &lt;file1&gt; &lt;file2&gt;"
+    "example": "git add ."
   },
   "git commit": {
     "definition": "Create a new commit with the changes in the staging area",
@@ -226,7 +226,7 @@
         "example": "git config --global --list"
       }
     }
-  },  
+  },
   "git branch -d": {
     "definition": "Delete a branch",
     "practical_use": "Remove a branch after it has been merged or is no longer needed",
@@ -266,7 +266,7 @@
     "definition": "Fetch all remote branches",
     "practical_use": "Retrieve updates from all remote repositories and update the local branches accordingly",
     "example": "git fetch --all"
-  },  
+  },
   "git push --force": {
     "definition": "Force push changes to a remote repository",
     "practical_use": "Overwrite remote branch history with local branch history, use with caution",
@@ -322,5 +322,4 @@
     "practical_use": "Clean up the working directory by permanently deleting untracked files and directories.",
     "example": "git clean -f"
   }
-  }
-  
+}

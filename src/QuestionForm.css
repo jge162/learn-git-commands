@@ -169,4 +169,27 @@
 }
 .example-text {
   color: #9e0303;
+}@media only screen and (max-width: 768px) {
+  .question-form {
+    /* Keep existing styles */
+    display: block; /* Change to block to remove flexbox */
+    text-align: center; /* Add text-align to center the elements */
+  }
+
+  .question-select {
+    /* Adjust width as needed */
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .submit-button,
+  .reset-button {
+    /* Adjust button styles */
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .git-icon {
+    /* Add top margin */
+    margin-top: 70px;
+  }
 }
