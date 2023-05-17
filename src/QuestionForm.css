@@ -146,25 +146,4 @@
   width: 150px; /* Adjust the size of the image */
   height: auto;
   margin-bottom: 20px;
-}.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-container {
-  margin: 0 9px;
-}
-
-.icon {
-  color: rgb(178, 167, 196);
-  transition: transform 0.2s ease 0.1s;
-  filter: drop-shadow(0px 2px 4px rgba(117, 111, 111, 0.3)); /* Add shadow effect */
-}
-
-.icon:hover {
-  filter: drop-shadow(0px 4px 8px rgb(12, 12, 12)); /* Modify shadow effect on hover */
-}
-.git-icon {
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5)); /* Add shadow effect to the favicon icon */
 }
