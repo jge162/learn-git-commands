@@ -1,0 +1,59 @@
+# The release version will be bumped based on the Pull request title 
+# for example in title Major will result in (bumps 0.0.0 to 1.0.0)
+name: Create_Release
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  create_release:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true && (contains(github.event.pull_request.title, 'Major') || contains(github.event.pull_request.title, 'Minor') || contains(github.event.pull_request.title, 'Patch')) && github.event.pull_request.user.login == 'jge162'
+    steps:
+      - name: Get PR title
+        id: get_pr_title
+        run: echo "::set-output name=title::${{ github.event.pull_request.title }}"
+
+      - name: Action
+        uses: actions/checkout@v2
+
+      - name: Get latest tag
+        run: |
+          git fetch --tags
+          echo "::set-output name=latest_tag::$(git describe --tags $(git rev-list --tags --max-count=1))"
+        id: get_latest_tag
+
+      - name: Bump version
+        run: |
+          semver=$(echo "${{ steps.get_latest_tag.outputs.latest_tag }}")
+          major=$(echo $semver | cut -d'.' -f1)
+          minor=$(echo $semver | cut -d'.' -f2)
+          patch=$(echo $semver | cut -d'.' -f3)
+          if [[ "${{ steps.get_pr_title.outputs.title }}" == *"Major"* ]]; then
+            new_major=$((major+1))
+            new_tag="$new_major.$minor.$patch"
+          elif [[ "${{ steps.get_pr_title.outputs.title }}" == *"Minor"* ]]; then
+            new_minor=$((minor+1))
+            new_tag="$major.$new_minor.$patch"
+          else
+            new_patch=$((patch+1))
+            new_tag="$major.$minor.$new_patch"
+          fi
+          echo "::set-output name=new_tag::$new_tag"
+        id: bump_version
+
+      - name: create-release-on-close
+        uses: jge162/create-release@2.1.1
+  
+        with:
+          files: |
+            build/*
+            
+          tag_name: ${{ steps.bump_version.outputs.new_tag }}
+          prerelease: Release ${{ steps.bump_version.outputs.new_tag }}
+          body: |
+            This is a new release ${{ steps.bump_version.outputs.new_tag }} which will include the following changes: ${{ steps.get_pr_title.outputs.title }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_SECRET }}
+          
