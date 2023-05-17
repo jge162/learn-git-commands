@@ -169,7 +169,7 @@
 }
 .example-text {
   color: #9e0303;
-}@media only screen and (max-width: 768px) {
+}@media only screen and (max-width: 600px) {
   .question-form {
     /* Keep existing styles */
     display: block; /* Change to block to remove flexbox */
