@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import gitCommands from './gitCommands.json';
 import './QuestionForm.css';
 import Footer from './Footer'; // Import the Footer component
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const QuestionForm = () => {
   const [question, setQuestion] = useState('');
@@ -72,8 +74,16 @@ const QuestionForm = () => {
         ) : (
           <div dangerouslySetInnerHTML={{ __html: response }}></div>
         )}
-      </div>
-      <Footer /> {/* Added footer component */}
+        <Footer /> {/* Added footer component */}
+        <div className="icons">
+  <a href="https://www.linkedin.com/in/jeremy-escobar/" className="icon-container" target="_blank" rel="noopener noreferrer">
+    <LinkedInIcon className="icon" style={{ fontSize: 60 }} />
+  </a>
+  <a href="https://github.com/jge162" className="icon-container" target="_blank" rel="noopener noreferrer">
+    <GitHubIcon className="icon" style={{ fontSize: 60 }} />
+  </a>
+</div>
+      </div>      
     </div>
   );
 };
