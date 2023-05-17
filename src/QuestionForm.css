@@ -148,3 +148,23 @@
   height: auto;
   margin-bottom: 30px;
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  margin: 0 9px;
+}
+
+.icon {
+  color: #034184;
+  transition: transform 0.2s ease 0.1s;
+  filter: drop-shadow(0px 2px 4px #756f6f4d); /* Add shadow effect */
+}
+
+.icon:hover {
+  filter: drop-shadow(0px 4px 8px rgb(177, 177, 177)); /* Modify shadow effect on hover */
+}
+
