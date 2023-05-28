@@ -10,3 +10,6 @@ Share with your friend and let me know if you have questions, or issues.
 
 ### Disclaimer: 
 The definitions and practical uses provided on this website are based on personal understanding and should not be considered official or authoritative. This information is intended for educational purposes only and does not constitute professional advice. Use the content at your own discretion. Thank you.
+
+## License
+[MIT](https://github.com/jge162/learn-git-commands/blob/main/LICENSE)
