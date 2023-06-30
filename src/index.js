@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import QuestionForm from './QuestionForm';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Change here
-import Binary from './Binary';
-import Navbar from './Navbar';
 import { sendToVercelAnalytics } from './vitals';
-import Disclaimer from './Disclaimer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Change here
+import Binary from './Pages/Binary';
+import Navbar from './Pages/Navbar';
+import QuestionForm from './Pages/QuestionForm';
+import Disclaimer from './Pages/Disclaimer';
+import './index.css';
 
 ReactDOM.render(
   <Router>

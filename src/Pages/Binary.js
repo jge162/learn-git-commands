@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import './Binary.css';
+import '../Styles/Binary.css';
 import Footer from './Footer';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
