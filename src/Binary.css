@@ -1,0 +1,74 @@
+.binary-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.git-icon {
+  width: 150px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.question-input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 9000px; /* Adjust the width as needed */
+  outline: blue;
+  transition: border-color 0.3s ease;
+}
+
+.binary-result,
+.hex-results, .decimal-result {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold; /* Add font weight */
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  margin: 0 9px;
+}
+
+.icon {
+  color: #034184;
+  transition: transform 0.2s ease 0.1s;
+  filter: drop-shadow(0px 2px 4px #756f6f4d); /* Add shadow effect */
+}
+
+.icon:hover {
+  filter: drop-shadow(0px 4px 8px rgb(177, 177, 177)); /* Modify shadow effect on hover */
+}
+
+.input-type-select {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #f7f7f7;
+  border-radius: 5px;
+  max-width: 9000px; /* Adjust the width as needed */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-type-label {
+  margin-left: 10px; /* Adjust the value as needed */
+}

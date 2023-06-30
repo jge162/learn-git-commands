@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: center; /* centers items on the line (not around them) */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px; /* adjust this for spacing between items */
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff;
+}
+
+.navbar-loaded .slide-down {
+  animation-delay: 2s;
+}
+
+
+@media (max-width: 768px) {
+  /* Mobile view */
+  .navbar {
+    flex-direction: column;
+  }
+}
