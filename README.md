@@ -16,3 +16,5 @@ The definitions and practical uses provided on this website are based on persona
 
 ## License
 [MIT](https://github.com/jge162/learn-git-commands/blob/main/LICENSE)
+
+Designed with 💙 by @jermyiah™
