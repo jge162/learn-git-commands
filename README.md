@@ -19,7 +19,9 @@ Share with your friend and let me know if you have questions, or issues.
 <img width="800" alt="Screenshot 2023-06-30 at 1 20 08 AM" src="https://github.com/jge162/learn-git-commands/assets/31228460/1f8db173-8a7f-4b12-88e4-7db9db8a272e">
 
 ### Disclaimer: 
->The definitions and practical uses provided on this website are based on personal understanding and should not be considered official or authoritative. This information is intended for educational purposes only and does not constitute professional advice. Use the content at your own discretion. Thank you.
+>The definitions and practical uses provided on this website are based on personal understanding and should not be considered official or
+>authoritative. This information is intended for educational purposes only and does not constitute professional advice. Use the content at
+>your own discretion. Thank you.
 
 ## License
 [MIT](https://github.com/jge162/learn-git-commands/blob/main/LICENSE)
